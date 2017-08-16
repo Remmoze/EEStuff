@@ -8,9 +8,9 @@ Stuff about EE (everybodyedits.com)
 
 # <a id="mail">Mail System</a>
 ### <a id="mail-send">"sendMail"</a>
-__*.Send.*__
 #### Tip:
 To get friends use [Friends](#friends) documentation.
+__*.Send.*__
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------

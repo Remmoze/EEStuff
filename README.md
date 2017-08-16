@@ -1,7 +1,7 @@
 # EEStuff
 Stuff about EE (everybodyedits.com)
 
-## Documentation for Lobby Connection
+# Documentation for Lobby Connection
  - [Mail System](#mail)
    - [sendMail](#mail-send)
    - [getMails](#mail-get)

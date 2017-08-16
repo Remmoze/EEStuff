@@ -10,6 +10,7 @@ Stuff about EE (everybodyedits.com)
 ### <a id="mail-send">"sendMail"</a>
 #### Tip:
 To get friends use [Friends](#friends) documentation.
+
 __*.Send.*__
 
 | Id   | Type        | Name               | Description

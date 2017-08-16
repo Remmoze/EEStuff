@@ -40,11 +40,7 @@ __*.Recieve.*__
 
 ### <a id="mail-get">"getMails"</a>
 
-__*.Send.*__
-
-```
-no extra arguments needed
-```
+__*.Send.*__ - no extra arguments needed
 
 __*.Recieve.*__
 
@@ -68,11 +64,7 @@ __*.Send.*__
 # <a id="friends">Friends</a>
 ### <a id="friends-invites">"getInvitesToMe"</a>
 
-__*.Send.*__
-
-```
-no extra arguments needed
-```
+__*.Send.*__ - no extra arguments needed
 
 __*.Recieve.*__
 
@@ -85,11 +77,7 @@ Repeated for each valid invite.
 ### <a id="friends-get">"getFriends"</a>
 ### <a id="friends-pendings">"getPending"</a>
 
-__*.Send.*__
-
-```
-no extra arguments needed
-```
+__*.Send.*__ - no extra arguments needed
 
 __*.Recieve.*__
 
@@ -106,11 +94,7 @@ __*.Recieve.*__
 
 ### <a id="friends-blocked">"getBlockedUsers"</a>
 
-__*.Send.*__
-
-```
-no extra arguments needed
-```
+__*.Send.*__ - no extra arguments needed
 
 __*.Recieve.*__
 

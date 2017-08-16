@@ -20,13 +20,13 @@ Stuff about EE (everybodyedits.com)
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
-| `0`  | `Boolean`   | Success            | -
+| `0`  | `Boolean`   | Success            | Was operation successful.
 
 -- If sending message wasn't successful:
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
-| `1`  | `String`    | Message            | Error message ().
+| `1`  | `String`    | Message            | Error message.
 
 # <a id="extra">Extra</a>
 ```

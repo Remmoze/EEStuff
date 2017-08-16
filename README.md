@@ -75,16 +75,35 @@ __*.Recieve.*__
 Repeated for each valid invite.
 
 ### <a id="friends-get">"getFriends"</a>
+
+__*.Send.*__ - no extra arguments needed
+
+__*.Recieve.*__
+
+| Id      | Type      | Name        | Description
+| ---     | ----      | ----        | -----------
+| `[...]` | `String`  | Name        | The name of the friend.
+| `[...]` | `Boolean` | Online      | Is friend Online.
+| `[...]` | `String`  | World Id    | The id of the world friend is in.
+| `[...]` | `String`  | World Name  | The Name of the world friend is in.
+| `[...]` | `Integer` | Smiley      | The smiley of the friend.
+| `[...]` | `Double`  | Last seen   | The time when friend was last seen.
+| `[...]` | `Boolean` | Gold Border | Has gold border enabled.
+
+Repeated for each valid friend.
+
 ### <a id="friends-pendings">"getPending"</a>
 
 __*.Send.*__ - no extra arguments needed
 
 __*.Recieve.*__
 
-| Id      | Type     | Name  | Description
-| ---     | ----     | ----  | -----------
-| `[...]` | `String` | Name  | The name of the person.
-| `[...]` | `Integer`| State | See Friends state table.
+| Id      | Type      | Name  | Description
+| ---     | ----      | ----  | -----------
+| `[...]` | `String`  | Name  | The name of the person.
+| `[...]` | `Integer` | State | See Friends state table.
+
+Repeated for each valid pending.
 
 | Value | Friend State
 | ----- | ----------

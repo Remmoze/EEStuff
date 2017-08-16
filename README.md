@@ -60,12 +60,6 @@ __*.Send.*__
 | ---     | ----     | ----          | -----------
 | `[...]` | `String` | Id            | The id of the mail.
 
-__*.Recieve.*__
-
-```
-no callback
-```
-
 # <a id="extra">Extra</a>
 ```
 no.

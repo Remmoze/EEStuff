@@ -8,7 +8,9 @@ Stuff about EE (everybodyedits.com)
 
 # <a id="mail">Mail System</a>
 ### <a id="mail-send">"sendMail"</a>
-*Send*
+__*.Send.*__
+#### Tip:
+To get friends use [Friends](#friends) documentation.
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------
@@ -16,10 +18,7 @@ Stuff about EE (everybodyedits.com)
 | `1`  | `String`    | Subject            | Subject of the mail.
 | `2`  | `String`    | Message            | Main body of the mail.
 
-# Tip:
-To get friends use [Friends](#friends) documentation.
-
-*Recieve*
+__*.Recieve.*__
 
 | Id   | Type        | Name               | Description
 | ---  | ---         | ----               | -----------

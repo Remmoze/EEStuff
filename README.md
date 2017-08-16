@@ -11,6 +11,11 @@ Stuff about EE (everybodyedits.com)
    - [getFriends](#friends-get)
    - [getPending](#friends-pendings)
    - [getBlockedUsers](#friends-blocked)
+   - [deleteFriend](#friends-delete)
+   - [deleteInvite](#friends-deleteinvite)
+   - [createInvite](#friends-create)
+   - [answerInvite](#friends-asnwer)
+   - [blockUserInvites](#freinds-block)
  - [Extra Info](#extra)
 
 # <a id="mail">Mail System</a>
@@ -20,23 +25,23 @@ To get friends use [Friends](#friends) documentation.
 
 __*.Send.*__
 
-| Id   | Type        | Name               | Description
-| ---  | ---         | ----               | -----------
-| `0`  | `String`    | Target             | Friend's name.
-| `1`  | `String`    | Subject            | Subject of the mail.
-| `2`  | `String`    | Message            | Main body of the mail.
+| Id   | Type     | Name    | Description
+| ---  | ---      | ----    | -----------
+| `0`  | `String` | Target  | Friend's name.
+| `1`  | `String` | Subject | Subject of the mail.
+| `2`  | `String` | Message | Main body of the mail.
 
 __*.Recieve.*__
 
-| Id   | Type        | Name               | Description
-| ---  | ---         | ----               | -----------
-| `0`  | `Boolean`   | Success            | Was operation successful.
+| Id   | Type      | Name    | Description
+| ---  | ---       | ----    | -----------
+| `0`  | `Boolean` | Success | Was operation successful.
 
--- If sending message wasn't successful:
+-- If operation wasn't successful:
 
-| Id   | Type        | Name               | Description
-| ---  | ---         | ----               | -----------
-| `1`  | `String`    | Message            | Error message.
+| Id   | Type     | Name    | Description
+| ---  | ---      | ----    | -----------
+| `1`  | `String` | Message | Error message.
 
 ### <a id="mail-get">"getMails"</a>
 
@@ -44,12 +49,12 @@ __*.Send.*__ - no extra arguments needed
 
 __*.Recieve.*__
 
-| Id      | Type     | Name          | Description
-| ---     | ----     | ----          | -----------
-| `[...]` | `String` | Id            | The id of the mail.
-| `[...]` | `String` | Name          | Sender's name.
-| `[...]` | `String` | Subject       | The subject of the mail.
-| `[...]` | `String` | Message       | The message of the mail.
+| Id      | Type     | Name    | Description
+| ---     | ----     | ----    | -----------
+| `[...]` | `String` | Id      | The id of the mail.
+| `[...]` | `String` | Name    | Sender's name.
+| `[...]` | `String` | Subject | The subject of the mail.
+| `[...]` | `String` | Message | The message of the mail.
 
 Repeated for each valid mail.
 
@@ -57,9 +62,9 @@ Repeated for each valid mail.
 
 __*.Send.*__
 
-| Id  | Type     | Name          | Description
-| --- | ----     | ----          | -----------
-| `0` | `String` | Id            | The id of the mail.
+| Id  | Type     | Name | Description
+| --- | ----     | ---- | -----------
+| `0` | `String` | Id   | The id of the mail.
 
 # <a id="friends">Friends</a>
 ### <a id="friends-invites">"getInvitesToMe"</a>
@@ -68,9 +73,9 @@ __*.Send.*__ - no extra arguments needed
 
 __*.Recieve.*__
 
-| Id      | Type     | Name          | Description
-| ---     | ----     | ----          | -----------
-| `[...]` | `String` | Name          | The name of the person who sent the invite.
+| Id      | Type     | Name | Description
+| ---     | ----     | ---- | -----------
+| `[...]` | `String` | Name | The name of the person who sent the invite.
 
 Repeated for each valid invite.
 
@@ -117,9 +122,79 @@ __*.Send.*__ - no extra arguments needed
 
 __*.Recieve.*__
 
-| Id      | Type     | Name          | Description
-| ---     | ----     | ----          | -----------
-| `[...]` | `String` | Name          | The name of the blocked person.
+| Id      | Type     | Name | Description
+| ---     | ----     | ---- | -----------
+| `[...]` | `String` | Name | The name of the blocked person.
+
+### <a id="friends-delete">"deleteFriend"</a>
+
+__*.Send.*__
+
+| Id  | Type     | Name | Description
+| --- | ----     | ---- | -----------
+| `0` | `String` | Name | The name of the friend you want to delete.
+
+### <a id="friends-deleteinvite">"deleteInvite"</a>
+
+__*.Send.*__
+
+| Id  | Type     | Name | Description
+| --- | ----     | ---- | -----------
+| `0` | `String` | Name | The name of the person you want to reject.
+
+### <a id="friends-create">"createInvite"</a>
+
+__*.Send.*__
+
+| Id  | Type     | Name | Description
+| --- | ----     | ---- | -----------
+| `0` | `String` | Name | The name of the person you want to add.
+
+__*.Recieve.*__
+
+| Id   | Type        | Name    | Description
+| ---  | ---         | ----    | -----------
+| `0`  | `Boolean`   | Success | Was operation successful.
+
+-- If operation wasn't successful:
+
+| Id   | Type        | Name    | Description
+| ---  | ---         | ----    | -----------
+| `1`  | `String`    | Message | Error message.
+
+### <a id="friends-asnwer">"answerInvite"</a>
+
+__*.Send.*__
+
+| Id  | Type      | Name   | Description
+| --- | ----      | ----   | -----------
+| `0` | `String`  | Name   | The name of the person.
+| `1` | `Boolean` | Answer | Accept or reject the invite.
+
+__*.Recieve.*__
+
+| Id   | Type      | Name    | Description
+| ---  | ---       | ----    | -----------
+| `0`  | `Boolean` | Success | Was operation successful.
+
+-- If operation wasn't successful:
+
+| Id   | Type     | Name    | Description
+| ---  | ---      | ----    | -----------
+| `1`  | `String` | Message | Error message.
+
+-- If operation wasn't successful:
+
+Recieve information about new friend. Documentation can be found [here](#friends-get)
+
+### <a id="friends-block">"blockUserInvites"</a>
+
+__*.Send.*__
+
+| Id  | Type      | Name  | Description
+| --- | ----      | ----  | -----------
+| `0` | `String`  | Name  | The name of the person.
+| `1` | `Boolean` | Block | Block or unblock the person.
 
 # <a id="extra">Extra</a>
 ```

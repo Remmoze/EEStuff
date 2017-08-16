@@ -5,6 +5,7 @@ Stuff about EE (everybodyedits.com)
  - [Mail System](#mail)
    - [sendMail](#mail-send)
    - [getMails](#mail-get)
+   - [deleteMail](#mail-delete)
  - [Extra Info](#extra)
 
 # <a id="mail">Mail System</a>
@@ -50,6 +51,20 @@ __*.Recieve.*__
 | `[...]` | `String` | Message       | The message of the mail.
 
 Repeated for each valid mail.
+
+### <a id="mail-delete">"deleteMail"</a>
+
+__*.Send.*__
+
+| Id      | Type     | Name          | Description
+| ---     | ----     | ----          | -----------
+| `[...]` | `String` | Id            | The id of the mail.
+
+__*.Recieve.*__
+
+```
+no callback
+```
 
 # <a id="extra">Extra</a>
 ```

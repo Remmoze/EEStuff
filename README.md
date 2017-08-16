@@ -183,9 +183,8 @@ __*.Recieve.*__
 | ---  | ---      | ----    | -----------
 | `1`  | `String` | Message | Error message.
 
--- If operation wasn't successful:
-
-Recieve information about new friend. Documentation can be found [here](#friends-get)
+-- If operation was successful:
+Recieves information about new friend. Documentation can be found [here](#friends-get)
 
 ### <a id="friends-block">"blockUserInvites"</a>
 

@@ -96,10 +96,7 @@ __*.Recieve.*__
 | Id      | Type     | Name  | Description
 | ---     | ----     | ----  | -----------
 | `[...]` | `String` | Name  | The name of the person.
-| `[...]` | `Integer`| State | See [Friends state](#friends-state).
-
-
-###<a id="friends-state"></a>
+| `[...]` | `Integer`| State | See Friends state table.
 
 | Value | Friend State
 | ----- | ----------

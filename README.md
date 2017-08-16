@@ -10,6 +10,7 @@ Stuff about EE (everybodyedits.com)
    - [getInvitesToMe](#friends-invites)
    - [getFriends](#friends-get)
    - [getPending](#friends-pendings)
+   - [getBlockedUsers](#friends-blocked)
  - [Extra Info](#extra)
 
 # <a id="mail">Mail System</a>
@@ -60,12 +61,65 @@ Repeated for each valid mail.
 
 __*.Send.*__
 
-| Id      | Type     | Name          | Description
-| ---     | ----     | ----          | -----------
-| `[...]` | `String` | Id            | The id of the mail.
+| Id  | Type     | Name          | Description
+| --- | ----     | ----          | -----------
+| `0` | `String` | Id            | The id of the mail.
 
 # <a id="friends">Friends</a>
-### <a id="mail-send">"sendMail"</a>
+### <a id="friends-invites">"getInvitesToMe"</a>
+
+__*.Send.*__
+
+```
+no extra arguments needed
+```
+
+__*.Recieve.*__
+
+| Id      | Type     | Name          | Description
+| ---     | ----     | ----          | -----------
+| `[...]` | `String` | Name          | The name of the person who sent the invite.
+
+Repeated for each valid invite.
+
+### <a id="friends-get">"getFriends"</a>
+### <a id="friends-pendings">"getPending"</a>
+
+__*.Send.*__
+
+```
+no extra arguments needed
+```
+
+__*.Recieve.*__
+
+| Id      | Type     | Name  | Description
+| ---     | ----     | ----  | -----------
+| `[...]` | `String` | Name  | The name of the person.
+| `[...]` | `Integer`| State | See [Friends state](#friends-state).
+
+
+###<a id="friends-state"></a>
+
+| Value | Friend State
+| ----- | ----------
+| `0`   | Pending
+| `1`   | Accepted
+| `2`   | Rejected
+
+### <a id="friends-blocked">"getBlockedUsers"</a>
+
+__*.Send.*__
+
+```
+no extra arguments needed
+```
+
+__*.Recieve.*__
+
+| Id      | Type     | Name          | Description
+| ---     | ----     | ----          | -----------
+| `[...]` | `String` | Name          | The name of the blocked person.
 
 # <a id="extra">Extra</a>
 ```

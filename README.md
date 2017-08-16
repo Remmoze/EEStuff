@@ -6,6 +6,10 @@ Stuff about EE (everybodyedits.com)
    - [sendMail](#mail-send)
    - [getMails](#mail-get)
    - [deleteMail](#mail-delete)
+ - [Friends](#friends)
+   - [getInvitesToMe](#friends-invites)
+   - [getFriends](#friends-get)
+   - [getPending](#friends-pendings)
  - [Extra Info](#extra)
 
 # <a id="mail">Mail System</a>
@@ -59,6 +63,9 @@ __*.Send.*__
 | Id      | Type     | Name          | Description
 | ---     | ----     | ----          | -----------
 | `[...]` | `String` | Id            | The id of the mail.
+
+# <a id="friends">Friends</a>
+### <a id="mail-send">"sendMail"</a>
 
 # <a id="extra">Extra</a>
 ```

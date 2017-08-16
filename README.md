@@ -16,6 +16,9 @@ Stuff about EE (everybodyedits.com)
 | `1`  | `String`    | Subject            | Subject of the mail.
 | `2`  | `String`    | Message            | Main body of the mail.
 
+# Tip:
+To get friends use [Friends](#friends) documentation.
+
 *Recieve*
 
 | Id   | Type        | Name               | Description

@@ -18,6 +18,8 @@ Stuff about EE (everybodyedits.com)
    - [blockUserInvites](#freinds-block)
  - [Extra Info](#extra)
 
+<hr />
+
 # <a id="mail">Mail System</a>
 ### <a id="mail-send">"sendMail"</a>
 
@@ -68,6 +70,8 @@ __*.Send.*__
 | Id  | Type     | Name | Description
 | --- | ----     | ---- | -----------
 | `0` | `String` | Id   | The id of the mail.
+
+<hr />
 
 # <a id="friends">Friends</a>
 ### <a id="friends-invites">"getInvitesToMe"</a>
@@ -205,6 +209,8 @@ __*.Send.*__
 | --- | ----      | ----  | -----------
 | `0` | `String`  | Name  | The name of the person.
 | `1` | `Boolean` | Block | Block or unblock the person.
+
+<hr />
 
 # <a id="extra">Extra</a>
 ```

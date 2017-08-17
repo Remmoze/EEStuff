@@ -45,8 +45,6 @@ __*.Recieve.*__
 
 ### <a id="mail-get">"getMails"</a>
 
-__*.Send.*__ - no extra arguments needed
-
 __*.Recieve.*__
 
 | Id      | Type     | Name    | Description
@@ -69,8 +67,6 @@ __*.Send.*__
 # <a id="friends">Friends</a>
 ### <a id="friends-invites">"getInvitesToMe"</a>
 
-__*.Send.*__ - no extra arguments needed
-
 __*.Recieve.*__
 
 | Id      | Type     | Name | Description
@@ -80,8 +76,6 @@ __*.Recieve.*__
 Repeated for each valid invite.
 
 ### <a id="friends-get">"getFriends"</a>
-
-__*.Send.*__ - no extra arguments needed
 
 __*.Recieve.*__
 
@@ -99,8 +93,6 @@ Repeated for each valid friend.
 
 ### <a id="friends-pendings">"getPending"</a>
 
-__*.Send.*__ - no extra arguments needed
-
 __*.Recieve.*__
 
 | Id      | Type      | Name  | Description
@@ -117,8 +109,6 @@ Repeated for each valid pending.
 | `2`   | Rejected
 
 ### <a id="friends-blocked">"getBlockedUsers"</a>
-
-__*.Send.*__ - no extra arguments needed
 
 __*.Recieve.*__
 
@@ -197,5 +187,6 @@ __*.Send.*__
 
 # <a id="extra">Extra</a>
 ```
-no.
+If a message doesn't have .Send. - you don't need extra arguments to send the message.
+If a message doesn't have .Recieve. - there is no callback.
 ```

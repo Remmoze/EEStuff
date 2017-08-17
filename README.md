@@ -4,6 +4,7 @@
 
 <hr />
 Stuff about EE (everybodyedits.com)
+
 ```
 If a message doesn't have .Send. - you don't need extra arguments to send the message.
 If a message doesn't have .Recieve. - there is no callback.
@@ -234,6 +235,7 @@ __*.Send.*__
 ### <a id="extra-getplayerobject">"getMySimplePlayerObject"</a>
 
 __*.Recieve.*__
+
 | Id   | Type      | Name              | Description
 | ---  | ---       | ----              | -----------
 | `0`  | `String`  | Name              | Your name.
@@ -252,12 +254,18 @@ __*.Recieve.*__
 | `13` | `String`  | Room0             | first room!?! (maybe?)
 | `14` | `String`  | Beta only room    | wtf? People can have more than 1 world right? ee is shit
 | `15` | `String`  | Home world        | Your home world id.
-| `16` | `Integer` | Can chat          | Can you chat.
-| `17` | `Integer` | Can chat          | Can you chat.
-| `18` | `Integer` | Can chat          | Can you chat.
-| `19` | `Integer` | Can chat          | Can you chat.
-| `20` | `Integer` | Can chat          | Can you chat.
-| `21` | `Integer` | Can chat          | Can you chat.
+| `16` | `String`  | Worlds order      | Worlds placed in order spitted by '᎙' (example: "world0x0᎙world0x1᎙world1x1")
+| `17` | `String`  | Worlds Ids        | Worlds Ids in the same order splitted by '᎙' (example: "PW01᎙PWabc᎙PWJesse")
+| `18` | `String`  | Worlds Names      | Worlds Names in the same order splitted by '᎙' (example: "My Love᎙My Grace᎙My Shrek")
+| `19` | `Boolean` | Visible           | Visibility of your profile.
+| `20` | `Boolean` | Banned            | Are you banned.
+| `21` | `Integer` | Accepted Terms    | Have you accepted terms.
+| `22` | `Integer` | Tutorial Version  | Your tutorial version.
+| `23` | `String`  | Badge             | Name of your current badge.
+| `24` | `Integer` | Max Energy        | Your max energy.
+| `25` | `Boolean` | Changed Name      | Have you changed your name in the past.
+| `26` | `String`  | Favorites Ids     | Your World Favorites Ids spitted by '᎙' (example: "PW01᎙PWOmg᎙PWJesse")
+| `27` | `String`  | Favorites names   | Your World Favorites Names spitted by '᎙' (example: "Lol Kek Chebyrek᎙I Love Maxi᎙Jessenoob")
 
 <hr />
 

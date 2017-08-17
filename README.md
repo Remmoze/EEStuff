@@ -42,7 +42,7 @@ __*.Recieve.*__
 | Id   | Type     | Name    | Description
 | ---  | ---      | ----    | -----------
 | `1`  | `String` | Message | Error message.
-
+<hr />
 ### <a id="mail-get">"getMails"</a>
 
 __*.Recieve.*__

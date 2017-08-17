@@ -29,6 +29,7 @@ If a message doesn't have .Recieve. - there is no callback.
    - [getLobbyProperties](#lobby-getproperties)
    - [getMySimplePlayerObject](#lobby-getplayerobject)
    - [timezone](#lobby-timezone)
+   - [finishTutorial](#lobby-finishtutorial)
  - [Extra](#extra)
    
 
@@ -296,9 +297,12 @@ __*.Send.*__
 
 <hr />
 
+### <a id="lobby-finishtutorial">"finishTutorial"</a>
+
+-- No extra information needed.
+
 # <a id="extra">Extra</a>
 
-<hr />
 
 
 

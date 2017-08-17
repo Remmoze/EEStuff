@@ -1,4 +1,8 @@
+<hr />
+
 # EEStuff
+
+<hr />
 Stuff about EE (everybodyedits.com)
 
 # Documentation for Lobby Connection
@@ -21,6 +25,9 @@ Stuff about EE (everybodyedits.com)
 <hr />
 
 # <a id="mail">Mail System</a>
+
+<hr />
+
 ### <a id="mail-send">"sendMail"</a>
 
 #### Tip:
@@ -74,6 +81,9 @@ __*.Send.*__
 <hr />
 
 # <a id="friends">Friends</a>
+
+<hr />
+
 ### <a id="friends-invites">"getInvitesToMe"</a>
 
 __*.Recieve.*__
@@ -213,6 +223,9 @@ __*.Send.*__
 <hr />
 
 # <a id="extra">Extra</a>
+
+<hr />
+
 ```
 If a message doesn't have .Send. - you don't need extra arguments to send the message.
 If a message doesn't have .Recieve. - there is no callback.

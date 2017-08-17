@@ -10,6 +10,8 @@ If a message doesn't have .Recieve. - there is no callback.
 ```
 
 # Documentation for Lobby Connection
+ - [Profiles](#profile)
+   - [getProfileObject](#profile-get)
  - [Mail System](#mail)
    - [sendMail](#mail-send)
    - [getMails](#mail-get)
@@ -36,6 +38,43 @@ If a message doesn't have .Recieve. - there is no callback.
 
 <hr />
 
+# <a id="profile">Profile</a>
+
+### <a id="profile-get">"getProfileObject"</a>
+
+__*.Send.*__
+
+| Id  | Type     | Name     | Description
+| --- | ---      | ----     | -----------
+| `0` | `String` | Username | Username of the player you want to get.
+
+__*.Recieve.*__
+
+| Id  | Type     | Name  | Description
+| --- | ---      | ----  | -----------
+| `0` | `String` | State | Is profile public.
+
+-- If State returns "public":
+
+| `1`  | `String`  | UserId           | The userid of the player.
+| `2`  | `String`  | Name             | The name of the player.
+| `3`  | `String`  | OldName          | The oldname of the player. (null if name wasn't changed)
+| `4`  | `Integer` | Smiley           | The smiley id of the player.
+| `5`  | `Integer` | Max Energy       | The max energy of the player.
+| `6`  | `Boolean` | Is Old Beta      | Does player own old beta. (?)
+| `7`  | `Boolean` | Is Administrator | Is player an admin.
+| `8`  | `Boolean` | Is Gold Member   | The smiley id of the player.
+| `9`  | `Integer` | Gold Expires     | When does your gold membership expires.
+| `10` | `Integer` | Gold Time        | (?)
+| `11` | `String`  | Room0            | first room!?! (maybe?)
+| `12` | `String`  | Beta only room   | wtf? People can have more than 1 world right? ee is shit
+| `13` | `String`  | Home world       | Your home world id.
+| `14` | `String`  | Worlds order     | Worlds placed in order spitted by '᎙' (example: "world0x0᎙world0x1᎙world1x1")
+| `15` | `String`  | Worlds Ids       | Worlds Ids in the same order splitted by '᎙' (example: "PW01᎙PWabc᎙PWJesse")
+| `16` | `String`  | Worlds Names     | Worlds Names in the same order splitted by '᎙' (example: "My Love᎙My Grace᎙My Shrek")
+
+<hr />
+
 # <a id="mail">Mail System</a>
 
 ### <a id="mail-send">"sendMail"</a>
@@ -45,23 +84,23 @@ To get friends use [Friends](#friends) documentation.
 
 __*.Send.*__
 
-| Id   | Type     | Name    | Description
-| ---  | ---      | ----    | -----------
-| `0`  | `String` | Target  | Friend's name.
-| `1`  | `String` | Subject | Subject of the mail.
-| `2`  | `String` | Message | Main body of the mail.
+| Id  | Type     | Name    | Description
+| --- | ---      | ----    | -----------
+| `0` | `String` | Target  | Friend's name.
+| `1` | `String` | Subject | Subject of the mail.
+| `2` | `String` | Message | Main body of the mail.
 
 __*.Recieve.*__
 
-| Id   | Type      | Name    | Description
-| ---  | ---       | ----    | -----------
-| `0`  | `Boolean` | Success | Was operation successful.
+| Id  | Type      | Name    | Description
+| --- | ---       | ----    | -----------
+| `0` | `Boolean` | Success | Was operation successful.
 
 -- If operation wasn't successful:
 
-| Id   | Type     | Name    | Description
-| ---  | ---      | ----    | -----------
-| `1`  | `String` | Message | Error message.
+| Id  | Type     | Name    | Description
+| --- | ---      | ----    | -----------
+| `1` | `String` | Message | Error message.
 
 <hr />
 

@@ -25,8 +25,11 @@ If a message doesn't have .Recieve. - there is no callback.
    - [createInvite](#friends-create)
    - [answerInvite](#friends-asnwer)
    - [blockUserInvites](#freinds-block)
+ - [Lobby](#lobby)
+   - [getMySimplePlayerObject](#lobby-getplayerobject)
+   - [timezone](#lobby-timezone)
  - [Extra](#extra)
-   - [getMySimplePlayerObject](#extra-getplayerobject)
+   
 
 <hr />
 
@@ -228,11 +231,11 @@ __*.Send.*__
 
 <hr />
 
-# <a id="extra">Extra</a>
+# <a id="lobby">Lobby</a>
 
 <hr />
 
-### <a id="extra-getplayerobject">"getMySimplePlayerObject"</a>
+### <a id="lobby-getplayerobject">"getMySimplePlayerObject"</a>
 
 __*.Recieve.*__
 
@@ -268,5 +271,20 @@ __*.Recieve.*__
 | `27` | `String`  | Favorites names   | Your World Favorites Names spitted by '᎙' (example: "Lol Kek Chebyrek᎙I Love Maxi᎙Jessenoob")
 
 <hr />
+
+### <a id="lobby-timezone">"timezone"</a>
+
+__*.Send.*__
+
+| Id  | Type      | Name        | Description
+| --- | ----      | ----        | -----------
+| `0` | `Integer` | TimeOffset  | The difference, in minutes, between universal time (UTC) and the computer's local time.
+
+<hr />
+
+# <a id="extra">Extra</a>
+
+<hr />
+
 
 

@@ -2,7 +2,6 @@
 
 # EEStuff
 
-<hr />
 Stuff about EE (everybodyedits.com)
 
 ```
@@ -36,8 +35,6 @@ If a message doesn't have .Recieve. - there is no callback.
 <hr />
 
 # <a id="mail">Mail System</a>
-
-<hr />
 
 ### <a id="mail-send">"sendMail"</a>
 
@@ -92,8 +89,6 @@ __*.Send.*__
 <hr />
 
 # <a id="friends">Friends</a>
-
-<hr />
 
 ### <a id="friends-invites">"getInvitesToMe"</a>
 
@@ -300,6 +295,8 @@ __*.Send.*__
 ### <a id="lobby-finishtutorial">"finishTutorial"</a>
 
 -- No extra information needed.
+
+<hr />
 
 # <a id="extra">Extra</a>
 

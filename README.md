@@ -55,6 +55,7 @@ __*.Recieve.*__
 | `0` | `String` | State | Is profile public.
 
 -- If State returns "public":
+
 | Id   | Type      | Name             | Description
 | ---  | ---       | ----             | -----------
 | `1`  | `String`  | UserId           | The userid of the player.

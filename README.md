@@ -10,6 +10,9 @@ If a message doesn't have .Recieve. - there is no callback.
 ```
 
 # Documentation for Lobby Connection
+
+ - [Shop](#shop)
+   - [getShop](#shop-get)
  - [Profiles](#profile)
    - [getProfileObject](#profile-get)
    - [setUsername](#profile-setusername)
@@ -36,7 +39,18 @@ If a message doesn't have .Recieve. - there is no callback.
    - [acceptTerms](#lobby-acceptterms)
  - [Extra](#extra)
    - [no documentation](#extra-private)
-   
+
+<hr />
+
+# <a id="shop">Shop</a>
+
+### <a id="shop-get">"getShop"</a>
+
+__*.Recieve.*__
+
+| Id  | Type     | Name  | Description
+| --- | ---      | ----  | -----------
+| `0` | `String` | State | Is profile public.
 
 <hr />
 

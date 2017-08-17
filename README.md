@@ -178,15 +178,15 @@ __*.Send.*__
 
 __*.Recieve.*__
 
-| Id   | Type        | Name    | Description
-| ---  | ---         | ----    | -----------
-| `0`  | `Boolean`   | Success | Was operation successful.
+| Id  | Type        | Name    | Description
+| --- | ---         | ----    | -----------
+| `0` | `Boolean`   | Success | Was operation successful.
 
 -- If operation wasn't successful:
 
-| Id   | Type        | Name    | Description
-| ---  | ---         | ----    | -----------
-| `1`  | `String`    | Message | Error message.
+| Id  | Type        | Name    | Description
+| --- | ---         | ----    | -----------
+| `1` | `String`    | Message | Error message.
 
 <hr />
 
@@ -201,15 +201,15 @@ __*.Send.*__
 
 __*.Recieve.*__
 
-| Id   | Type      | Name    | Description
-| ---  | ---       | ----    | -----------
-| `0`  | `Boolean` | Success | Was operation successful.
+| Id  | Type      | Name    | Description
+| --- | ---       | ----    | -----------
+| `0` | `Boolean` | Success | Was operation successful.
 
 -- If operation wasn't successful:
 
-| Id   | Type     | Name    | Description
-| ---  | ---      | ----    | -----------
-| `1`  | `String` | Message | Error message.
+| Id  | Type     | Name    | Description
+| --- | ---      | ----    | -----------
+| `1` | `String` | Message | Error message.
 
 -- If operation was successful:
 Recieves information about new friend. Documentation can be found [here](#friends-get)
@@ -233,6 +233,31 @@ __*.Send.*__
 
 ### <a id="extra-getplayerobject">"getMySimplePlayerObject"</a>
 
+__*.Recieve.*__
+| Id   | Type      | Name              | Description
+| ---  | ---       | ----              | -----------
+| `0`  | `String`  | Name              | Your name.
+| `1`  | `Integer` | Smiley            | Your smiley id.
+| `2`  | `Integer` | Aura              | Your aura id.
+| `3`  | `Integer` | Aura color        | Your aura color.
+| `4`  | `Boolean` | Chat banned       | Are you a chat banned user.
+| `5`  | `Boolean` | Smiley pack       | Has smiley pack. (?) //need to look into that
+| `6`  | `Boolean` | Is Administrator  | Are you an admin.
+| `7`  | `Boolean` | Is Moderator      | Are you a mod.
+| `8`  | `Boolean` | Is Gold Member    | Are you a gold member.
+| `9`  | `Boolean` | Wears Gold Border | Are you wearing a gold border.
+| `10` | `Integer` | Gold Expires      | When does your gold membership expires.
+| `11` | `Integer` | Gold Time         | (?)
+| `12` | `Boolean` | Gold Welcome      | (?)
+| `13` | `String`  | Room0             | first room!?! (maybe?)
+| `14` | `String`  | Beta only room    | wtf? People can have more than 1 world right? ee is shit
+| `15` | `String`  | Home world        | Your home world id.
+| `16` | `Integer` | Can chat          | Can you chat.
+| `17` | `Integer` | Can chat          | Can you chat.
+| `18` | `Integer` | Can chat          | Can you chat.
+| `19` | `Integer` | Can chat          | Can you chat.
+| `20` | `Integer` | Can chat          | Can you chat.
+| `21` | `Integer` | Can chat          | Can you chat.
 
 <hr />
 

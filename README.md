@@ -20,6 +20,7 @@ Stuff about EE (everybodyedits.com)
 
 # <a id="mail">Mail System</a>
 ### <a id="mail-send">"sendMail"</a>
+
 #### Tip:
 To get friends use [Friends](#friends) documentation.
 
@@ -42,7 +43,9 @@ __*.Recieve.*__
 | Id   | Type     | Name    | Description
 | ---  | ---      | ----    | -----------
 | `1`  | `String` | Message | Error message.
+
 <hr />
+
 ### <a id="mail-get">"getMails"</a>
 
 __*.Recieve.*__
@@ -55,6 +58,8 @@ __*.Recieve.*__
 | `[...]` | `String` | Message | The message of the mail.
 
 Repeated for each valid mail.
+
+<hr />
 
 ### <a id="mail-delete">"deleteMail"</a>
 
@@ -75,6 +80,8 @@ __*.Recieve.*__
 
 Repeated for each valid invite.
 
+<hr />
+
 ### <a id="friends-get">"getFriends"</a>
 
 __*.Recieve.*__
@@ -90,6 +97,8 @@ __*.Recieve.*__
 | `[...]` | `Boolean` | Gold Border | Has gold border enabled.
 
 Repeated for each valid friend.
+
+<hr />
 
 ### <a id="friends-pendings">"getPending"</a>
 
@@ -108,6 +117,8 @@ Repeated for each valid pending.
 | `1`   | Accepted
 | `2`   | Rejected
 
+<hr />
+
 ### <a id="friends-blocked">"getBlockedUsers"</a>
 
 __*.Recieve.*__
@@ -115,6 +126,8 @@ __*.Recieve.*__
 | Id      | Type     | Name | Description
 | ---     | ----     | ---- | -----------
 | `[...]` | `String` | Name | The name of the blocked person.
+
+<hr />
 
 ### <a id="friends-delete">"deleteFriend"</a>
 
@@ -124,6 +137,8 @@ __*.Send.*__
 | --- | ----     | ---- | -----------
 | `0` | `String` | Name | The name of the friend you want to delete.
 
+<hr />
+
 ### <a id="friends-deleteinvite">"deleteInvite"</a>
 
 __*.Send.*__
@@ -131,6 +146,8 @@ __*.Send.*__
 | Id  | Type     | Name | Description
 | --- | ----     | ---- | -----------
 | `0` | `String` | Name | The name of the person you want to reject.
+
+<hr />
 
 ### <a id="friends-create">"createInvite"</a>
 
@@ -151,6 +168,8 @@ __*.Recieve.*__
 | Id   | Type        | Name    | Description
 | ---  | ---         | ----    | -----------
 | `1`  | `String`    | Message | Error message.
+
+<hr />
 
 ### <a id="friends-asnwer">"answerInvite"</a>
 
@@ -175,6 +194,8 @@ __*.Recieve.*__
 
 -- If operation was successful:
 Recieves information about new friend. Documentation can be found [here](#friends-get)
+
+<hr />
 
 ### <a id="friends-block">"blockUserInvites"</a>
 

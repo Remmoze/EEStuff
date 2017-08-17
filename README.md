@@ -12,6 +12,8 @@ If a message doesn't have .Recieve. - there is no callback.
 # Documentation for Lobby Connection
  - [Profiles](#profile)
    - [getProfileObject](#profile-get)
+   - [setUsername](#profile-setusername)
+   - [changeUsername](#profile-changeusername)
  - [Mail System](#mail)
    - [sendMail](#mail-send)
    - [getMails](#mail-get)
@@ -74,6 +76,30 @@ __*.Recieve.*__
 | `14` | `String`  | Worlds order     | Worlds placed in order spitted by '᎙' (example: "world0x0᎙world0x1᎙world1x1")
 | `15` | `String`  | Worlds Ids       | Worlds Ids in the same order splitted by '᎙' (example: "PW01᎙PWabc᎙PWJesse")
 | `16` | `String`  | Worlds Names     | Worlds Names in the same order splitted by '᎙' (example: "My Love᎙My Grace᎙My Shrek")
+
+<hr />
+
+### <a id="profile-setusername">"setUsername"</a>
+
+__*.Send.*__
+
+| Id  | Type     | Name         | Description
+| --- | ---      | ----         | -----------
+| `0` | `String` | Chosen Name  | Name you want to set.
+
+**NOTE:** You need to set your username upon registering a new player.
+
+<hr />
+
+### <a id="profile-changeusername">"changeUsername"</a>
+
+__*.Send.*__
+
+| Id  | Type     | Name         | Description
+| --- | ---      | ----         | -----------
+| `0` | `String` | Chosen Name  | Name you want to set.
+
+**NOTE:** You need to set your username after buying a namechange.
 
 <hr />
 

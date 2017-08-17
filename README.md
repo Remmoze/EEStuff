@@ -26,6 +26,7 @@ If a message doesn't have .Recieve. - there is no callback.
    - [answerInvite](#friends-asnwer)
    - [blockUserInvites](#freinds-block)
  - [Lobby](#lobby)
+   - [getLobbyProperties](#lobby-getproperties)
    - [getMySimplePlayerObject](#lobby-getplayerobject)
    - [timezone](#lobby-timezone)
  - [Extra](#extra)
@@ -232,6 +233,19 @@ __*.Send.*__
 <hr />
 
 # <a id="lobby">Lobby</a>
+
+<hr />
+
+### <a id="lobby-getproperties">"getLobbyProperties"</a>
+
+__*.Recieve.*__
+
+| Id  | Type      | Name              | Description
+| --- | ---       | ----              | -----------
+| `0` | `Boolean` | First Daily Login | Is it the first time you login lobby this day.
+| `1` | `Integer` | Streak            | Your daily streak.
+
+-- Note: if you want to get a day of the streak you should use `Message.GetInt(1)+1;`
 
 <hr />
 

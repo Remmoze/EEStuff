@@ -31,6 +31,7 @@ If a message doesn't have .Recieve. - there is no callback.
    - [finishTutorial](#lobby-finishtutorial)
    - [acceptTerms](#lobby-acceptterms)
  - [Extra](#extra)
+   - [no documentation](#extra-private)
    
 
 <hr />
@@ -307,6 +308,9 @@ __*.Send.*__
 
 # <a id="extra">Extra</a>
 
+### <a id="extra-private">No documentation.</a>
+-- list of messages with no documentation for various reasons
+ - "confirmEmail"
 
 
 

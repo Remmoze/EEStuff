@@ -4,6 +4,10 @@
 
 <hr />
 Stuff about EE (everybodyedits.com)
+```
+If a message doesn't have .Send. - you don't need extra arguments to send the message.
+If a message doesn't have .Recieve. - there is no callback.
+```
 
 # Documentation for Lobby Connection
  - [Mail System](#mail)
@@ -20,7 +24,8 @@ Stuff about EE (everybodyedits.com)
    - [createInvite](#friends-create)
    - [answerInvite](#friends-asnwer)
    - [blockUserInvites](#freinds-block)
- - [Extra Info](#extra)
+ - [Extra](#extra)
+   - [getMySimplePlayerObject](#extra-getplayerobject)
 
 <hr />
 
@@ -226,7 +231,9 @@ __*.Send.*__
 
 <hr />
 
-```
-If a message doesn't have .Send. - you don't need extra arguments to send the message.
-If a message doesn't have .Recieve. - there is no callback.
-```
+### <a id="extra-getplayerobject">"getMySimplePlayerObject"</a>
+
+
+<hr />
+
+

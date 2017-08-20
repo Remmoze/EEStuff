@@ -31,6 +31,7 @@ If a message doesn't have .Recieve. - there is no callback.
    - [createInvite](#friends-create)
    - [answerInvite](#friends-asnwer)
    - [blockUserInvites](#freinds-block)
+   - [blockAllInvites](#friends-blockall)
  - [Lobby](#lobby)
    - [getLobbyProperties](#lobby-getproperties)
    - [getMySimplePlayerObject](#lobby-getplayerobject)
@@ -308,6 +309,16 @@ __*.Send.*__
 | --- | ----      | ----  | -----------
 | `0` | `String`  | Name  | The name of the person.
 | `1` | `Boolean` | Block | Block or unblock the person.
+
+<hr />
+
+### <a id="friends-blockall">"blockAllInvites"</a>
+
+__*.Recieve.*__
+
+| Id  | Type      | Name  | Description
+| --- | ---       | ----  | -----------
+| `0` | `Boolean` | State | Blocked all invites.
 
 <hr />
 

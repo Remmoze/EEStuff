@@ -17,6 +17,7 @@ If a message doesn't have .Recieve. - there is no callback.
    - [getProfileObject](#profile-get)
    - [setUsername](#profile-setusername)
    - [changeUsername](#profile-changeusername)
+   - [toggleProfile](#profile-toggle)
  - [Mail System](#mail)
    - [sendMail](#mail-send)
    - [getMails](#mail-get)
@@ -117,6 +118,14 @@ __*.Send.*__
 **NOTE:** You need to set your username after buying a namechange.
 
 <hr />
+
+### <a id="profile-toggle">"toggleProfile"</a>
+
+__*.Send.*__
+
+| Id  | Type      | Name  | Description
+| --- | ---       | ----  | -----------
+| `0` | `Boolean` | State | Desired visibility state for your profile.  
 
 # <a id="mail">Mail System</a>
 
